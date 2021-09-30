@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+     <!-- CSS File -->
+     <link rel="stylesheet" href="css/register.css">
+     <!-- Normalize file  -->
+     <link rel="stylesheet" href="css/normalize.css">
+     <!-- fontAwesome library -->
+     <link rel="stylesheet" href="css/all.min.css">
+     <!-- GOOGLE FONTS -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Start of header -->
+  <div class="header">
+      <a href="index.html"><img src="images/logo.png" alt="Zee Cars"></a>
+      <ul class="nav">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="rent.html" id="rent-now">RENT NOW</a></li>
+      </ul>
+  </div>
+  <!-- End of Header -->
+<!-- body -->
+<div class ="body">
+    <div class="register">
+        <p id="Form_text"> Registration Form</p>
+        <form action="" id="form">
+            <input type="text" id="fname" name="fname" placeholder="First Name.." class = "form" autofocus required>
+
+            <input type="text" id="lname" name="lname" placeholder="Last Name.."class = "form"  required><br>
+            <input type="text" id="username" name="username" placeholder="Username" class = "form">
+
+            <input type="password" id="password" name="password" placeholder="Password"class = "form"  required><br>
+
+            <input type="email" id="email" name="email" placeholder="E-mail.."class = "form"  required > <br>
+
+
+            <div id="Gender">
+                <p id="gender-text">Gender (Optional):         </p>
+                <input type="radio" id="Male" name="Gender" value="Male">
+                 <label for="Male" id="male-space">Male</label>
+                 <input type="radio" id="Female" name="Gender" value="Female">
+                 <label for="Female" id="female-space">Female</label><br>
+            </div>
+
+        </form>
+        <button type="submit" id="Register-button" >Register</button>
+        <p id="question">Already have an account?<a id="sign-in-link" href="signin.html">  SIGN IN</a></p>
+        <!-- onclick="window.open('index.html')" -->
+    </div>
+
+
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p>ZeeCars is a website created to help people rent cars in a way much more faster than the offline way.</p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#"><i class="fas fa-phone-volume"></i>+20 100 123 1459</a>
+              </div>
+              <div class="email">
+                <a href="#"><i class="fas fa-envelope"></i>EmailUs@zeecars.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">Pages</div>
+            <div><a href="index.html">HOME</a></div>
+            <div><a href="rent.html">RENT NOW</a></div>
+            <div><a href="about.html">ABOUT</a></div>
+            <div><a href="credits.html">CREDITS</a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">Subscribe us</div>
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+              <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="bottom">
+          <p>Copyright © 2020 <a href="#">OverRated Team</a> All rights reserved</p>
+        </div>
+   </footer>
+
+
+
+    <!-- javascript -->
+
+<script src="js/register.js"></script>
+
+
+</body>
+</html>

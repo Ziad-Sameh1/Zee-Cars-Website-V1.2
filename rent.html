@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zee Cars</title>
+    <!-- Main Css Page -->
+    <link rel="stylesheet" href="css/rent.css">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Fontawesome library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Start of header -->
+    <div class="header">
+        <a href="index.html"><img src="images/logo.png" alt="Zee Cars"></a>
+        <ul class="nav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="rent.html" id="rent-now">RENT NOW</a></li>
+        </ul>
+    </div>
+    <!-- End of Header -->
+    <div class="first-section">
+       <div class="images">
+         <img class="mySlides" src="images/slider1.png">
+         <img class="mySlides" src="images/slider2.png">
+         <img class="mySlides" src="images/slider3.png">
+         <button class="display-left" id="previous-image" onclick="plusDivs(-1)">&#10094;</button>
+         <button class="display-right" id="next-image" value="Ziad "onclick="plusDivs(+1)">&#10095;</button>
+       </div>
+    </div>
+        <div class="rent-section">
+            <select name="list" id="brand-list">
+                <option selected>Any Brand</option>
+                <option>Audi</option>
+                <option>BMW</option>
+                <option>Dodge</option>
+                <option>Ferrari</option>
+                <option>Hyundai</option>
+                <option>Mercedes Benz</option>
+                <option>Porsche</option>
+                <option>Tesla</option>
+                <option>Volvo</option>
+            </select>
+            <select name="list" id="type-list">
+                <option selected>Any Type</option>
+                <option>Coupe</option>
+                <option>Sedan</option>
+                <option>SUV</option>
+            </select>
+            <select name="list" id="model-list">
+                <option selected>Any Model</option>
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+                <option>2018</option>
+                <option>2019</option>
+                <option>2020</option>
+                <option>2021</option>
+            </select>
+            <input type="button" value="Rent Now" id="rent-box"
+                onclick="window.alert('You Have Rented The Car Successfully!')">
+        </div>
+    </div>
+    <div class="second-section">
+      <h2>Available Cars</h2>
+      <div class="flex">
+        <div>
+          <img src="images/Audi.png">
+          <p>Audi</p>
+        </div>
+        <div>
+          <img src="images/BMW.png">
+          <p>BMW</p>
+        </div>
+        <div>
+          <img src="images/Dodge.png">
+          <p>Dodge</p>
+        </div>
+        <div>
+          <img src="images/Ferrari.png">
+          <p>Ferrari</p>
+        </div>
+        <div>
+          <img src="images/Hyundai.png">
+          <p>Hyundai</p>
+        </div>
+        <div>
+          <img src="images/Mercedes Benz.png">
+          <p>Mercedes Benz</p>
+        </div>
+        <div>
+          <img src="images/Porsche.png">
+          <p>Porsche</p>
+        </div>
+        <div>
+          <img src="images/Tesla.png">
+          <p>Tesla</p>
+        </div>
+        <div>
+          <img src="images/Volvo.png">
+          <p>Volvo</p>
+        </div>
+    </div>
+    <hr>
+    <footer>
+         <div class="content">
+           <div class="left box">
+             <div class="upper">
+               <div class="topic">About us</div>
+               <p>ZeeCars is a website created to help people rent cars in a way much more faster than the offline rent</p>
+             </div>
+             <div class="lower">
+               <div class="topic">Contact us</div>
+               <div class="phone">
+                 <a href="#"><i class="fas fa-phone-volume"></i>+20 100 123 1459</a>
+               </div>
+               <div class="email">
+                 <a href="#"><i class="fas fa-envelope"></i>EmailUs@zeecars.com</a>
+               </div>
+             </div>
+           </div>
+           <div class="middle box">
+             <div class="topic">Pages</div>
+             <div><a href="index.html">HOME</a></div>
+             <div><a href="rent.html">RENT NOW</a></div>
+             <div><a href="about.html">ABOUT</a></div>
+             <div><a href="credits.html">CREDITS</a></div>
+           </div>
+           <div class="right box">
+             <div class="topic">Subscribe us</div>
+             <form action="#">
+               <input type="text" placeholder="Enter email address">
+               <input type="submit" name="" value="Send">
+               <div class="media-icons">
+                 <a href="#"><i class="fab fa-facebook-f"></i></a>
+                 <a href="#"><i class="fab fa-instagram"></i></a>
+                 <a href="#"><i class="fab fa-twitter"></i></a>
+                 <a href="#"><i class="fab fa-youtube"></i></a>
+                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
+               </div>
+             </form>
+           </div>
+         </div>
+         <div class="bottom">
+           <p>Copyright © 2020 <a href="#">OverRated Team</a> All rights reserved</p>
+         </div>
+    </footer>
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length} ;
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+      }
+    </script>
+</body>
+
+</html>
